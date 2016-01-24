@@ -17,11 +17,11 @@ It gets funny and makes some comments about your team or reacts before certain w
 ```
 git clone https://github.com/netbeast/passbot && cd passbot
 npm install
-npm start --token <SLACK BOT INTEGRATION TOKEN>
+npm start -- --token <SLACK BOT INTEGRATION TOKEN>
 ```
 
 If token is not present it will look for a environment variable in `process.env.PASSBOT_TOKEN`.
-If you do not have such integration token ready you can get one [here](https://netbeast.slack.com/apps/new/A0F7YS25R-bots)
+If you do not have such integration token ready you can get one [here](https://netbeast.slack.com/apps/new/A0F7YS25R-bots).
 
 It will read passwords from **.passwords.json** on project folder, which is gitignored. If no passwords are found
 a error sound like `mec mec mec` will be its answer. You can create it telling passbot to save its first pass.

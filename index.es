@@ -1,7 +1,12 @@
 import Botkit from 'botkit'
+import cmd from 'commander'
 import { store, retrieve } from './lib.es'
 
-const BB8_TOKEN = 'xoxb-19063896503-MqDmJqVXtHFH8ad4wmvtw3BS'
+cmd.option('--token [token]', 'Slack bot integration token').parse(process.argv)
+
+const BB8_TOKEN =  cmd.token || process.env.PASSBOT_TOKEN
+
+console.log('BB8_TOKEN', BB8_TOKEN)
 
 var controller = Botkit.slackbot()
 var bot = controller.spawn({
