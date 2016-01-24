@@ -20,6 +20,7 @@ async function handle (bot, msg) {
   const text = msg.text
   let res = 'bip bip bip!'
 
+  if (text.includes('shut up')) res = '_Entering standby mode..._'
   if (text.includes('get password')) res = await retrieve(text)
   if (text.includes('save password')) res = await store(text)
 
