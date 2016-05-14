@@ -1,12 +1,12 @@
 {
   "name": "passbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": ":robot_face: slack robot password manager",
-  "main": "index.js",
+  "main": "passbot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/babel-node index.es",
-    "dev": "nodemon --exec 'node_modules/.bin/babel-node' ./index.es"
+    "start": "node passbot.js",
+    "dev": "nodemon passbot.js"
   },
   "repository": {
     "type": "git",
@@ -28,12 +28,9 @@
   },
   "homepage": "https://github.com/netbeast/passbot#readme",
   "dependencies": {
-    "babel": "^5.8.23",
     "botkit": "0.0.5",
     "commander": "^2.9.0",
+    "dotenv": "^2.0.0",
     "fs-promise": "^0.3.1"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.4.5"
   }
 }

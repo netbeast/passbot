@@ -21,17 +21,11 @@
 ehthumbs.db
 Thumbs.db
 
-
 # Project ignores #
 ###################
 .env
-
 .log
 .sass-cache/
 .passwords.json
-
 node_modules
-.sandbox/*
-*.sqlite
-
-node_modules
+npm-debug.log

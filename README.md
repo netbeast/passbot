@@ -3,8 +3,7 @@
 
 > passbot is in a really early stage and all aspects of this documentation are not yet implemented. Those must serve as roadmap.
 
-Passbot will take your bot name and avatar. It will respond to mentions or direct messages, but will only share passwords to a set
-of authorised users.
+Passbot will take your bot name and avatar. It will respond to mentions or direct messages, but will only share passwords to a set of authorised users.
 
 ![password retrieval](docs/password-retrieval.png)
 
@@ -32,11 +31,13 @@ through slack, like before, or manually on **.expressions.json** file, also on p
 ## Contribute
 If you have nodemon installed you can start development mode as:
 ```
-npm run dev
+nodemon passbot.js
 ```
+Please open an issue or make a Pull Request if you want a new feature to be released! If you please, help me creating mocha tests for bot connection, passwords database and tasks!
 
 ### tasks
-You can ask the bot to perform tasks. By default no tasks are installed. Tasks are javascript (or babel ES6/7) single-file programs
-installed under **./tasks** folder. To ask the bot to execute a task tell him:
+You can ask the bot to perform tasks. By default no tasks are installed. Tasks are javascript single-file programs installed under **./tasks** folder. To ask the bot to execute a task tell him:
 
-```@bb-8 please <name of file without js> ...arguments you want to pass it```
+```
+@bb-8 please <name of file without js> ...arguments you want to pass it
+```
